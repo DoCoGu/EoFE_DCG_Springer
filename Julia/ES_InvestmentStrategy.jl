@@ -1,8 +1,20 @@
+# ES_InvestmentStrategy.py
+# This script analyzes different investment strategies, including buy-and-hold
+# and an event-driven strategy based on aviation disasters, in Python.
+#
+# Developed for: Essentials of Financial Economics
+# Authors: Michael Donadelli, Michele Costola, Ivan Gufler
+# Date: May 8, 2025
+
+
 using CSV, DataFrames, XLSX, Dates, Statistics, Plots
+
+# Set the working directory to current file location
+cd(@__DIR__)
 
 # Setting
 cutoff = 150
-America = 1
+America = 0
 fD = 3
 
 # Import Data
@@ -43,9 +55,15 @@ end
 EDummy = EDummy[4:end,:]
 
 
-# Investment Strategy
+# Buy and Hold strategy: Cumulative excess return over time
+# Calculate excess returns (Asset Return - Risk-Free Rate)
 BuyandHold = cumsum(Ret .- Rf)
 
+# Aviation disasters event-driven strategy
+# This strategy replaces the excess return on the day after an aviation disaster
+# (where EDummy[:, 0] == 1) to be (Rf - Ret) instead of (Ret - Rf).
+# This implies selling the risky asset and holding the risk-free asset on event days + 1.
+# Create a copy of the excess returns to modify for the strategy
 AviationStrategy = copy(Ret .- Rf)
 aviation_idx = EDummy[:, 1] .== 1
 AviationStrategy[aviation_idx] .= Rf[aviation_idx] .- Ret[aviation_idx]
@@ -60,3 +78,7 @@ ylabel!("Cumulative return")
 plot!(legend=:best, size=(1000, 600), legendfontsize=12, guidefontsize=14)
 
 savefig("ES_InvStrategy.png")
+
+# This Python script contains code examples and material from the book:
+# "Essentials of Financial Economics" by Michael Donadelli, Michele Costola, and Ivan Gufler.
+# You can find more information and download the book at: link.springer.com/book/9783031861895
