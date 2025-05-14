@@ -1,8 +1,15 @@
+# getuncef.py
+# This function calculates the unconstrained efficient frontier for a given
+# set of asset expected returns and covariance matrix in Python.
+#
+# Developed for: Essentials of Financial Economics
+# Authors: Michael Donadelli, Michele Costola, Ivan Gufler
+# Date: May 8, 2025
+
 import numpy as np
 
 def getuncef(mu, S, muR):
     """
-    ESGSF2021 - michele.costola@unive.it
     Python Code
     Function: getuncef - get unconstrained efficient frontier
     
@@ -43,3 +50,7 @@ def getuncef(mu, S, muR):
     w = d / D + (E / D) * muR
     
     return OptSigma, w
+
+# This Python script contains code examples and material from the book:
+# "Essentials of Financial Economics" by Michael Donadelli, Michele Costola, and Ivan Gufler.
+# You can find more information and download the book at: link.springer.com/book/9783031861895
