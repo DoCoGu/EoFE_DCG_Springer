@@ -34,7 +34,7 @@ ExRet <- as.matrix(Ret - Rf)
 
 # Convert dates to Date format
 Events <- dmy(Events)
-DatesReturn <- ymd(Factors$...1)
+DatesReturn <- ymd(Factors$Date)
 
 n <- nrow(ExRet)
 nS <- ncol(ExRet)
