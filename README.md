@@ -1,6 +1,6 @@
 # Scripts for "Essentials of Financial Economics"
 
-This repository contains a comprehensive collection of scripts designed to complement the material presented in the book **"Essentials of Financial Economics"** by Michael Donadelli, Michele Costola, and Ivan Gufler. These scripts serve as practical tools, allowing readers and practitioners to implement the theoretical concepts and financial economic models discussed throughout the book using various popular programming languages.
+This repository contains a comprehensive collection of scripts designed to complement the material presented in the book **[Essentials of Financial Economics](https://link.springer.com/book/10.1007/978-3-031-86189-5)** by Michael Donadelli, Michele Costola, and Ivan Gufler (Springer Texts in Business and Economics series, Springer, 2025). These scripts serve as practical tools, allowing readers and practitioners to implement the theoretical concepts and financial economic models discussed throughout the book using various popular programming languages.
 
 The code provided here is directly linked to the examples and methodologies detailed in the textbook, offering a hands-on approach to understanding and applying financial economic principles. By running and modifying these scripts, users can gain deeper insights into topics such as asset pricing, portfolio theory, and event studies.
 
@@ -14,6 +14,19 @@ To ensure broad accessibility and cater to different preferences, the scripts ar
 * **R**
 
 While the core logic and functionality are consistent across languages, there may be minor differences in implementation details or required libraries specific to each environment.
+
+## Tested Software Versions
+
+The scripts in this repository were developed and successfully executed using the following software versions:
+
+| Language | Version    |
+| -------- | ---------- |
+| MATLAB   | **R2024a** |
+| Python   | **3.13**   |
+| Julia    | **1.11.4**   |
+| R        | **4.3.2**  |
+
+If you encounter issues when running the code on different versions, please let us know by opening an issue or reaching out to the authors.
 
 ## Scripts Overview
 
@@ -33,63 +46,67 @@ The `getuncef` (Get Unconstrained Efficient Frontier) script is a standalone fun
 Below is a list of the scripts provided, categorized by programming language. The core functionality is similar for scripts with the same base name across different languages.
 
 * **MATLAB (.m)**:
-    * `CAPM.m`
-    * `CAPM_2F.m`
-    * `CAPM_3F.m`
-    * `CAPM_RW.m`
-    * `CS_EPU.m`
-    * `CS_T.m`
-    * `ES_CAR.m`
-    * `ES_InvestmentStrategy.m`
-    * `ES_RegAnalysis.m`
-    * `MV.m`
-    * `MV_rf.m`
-    * `BlackLitterman.m`
-    * `getuncef.m`
+
+  * `CAPM.m`
+  * `CAPM_2F.m`
+  * `CAPM_3F.m`
+  * `CAPM_RW.m`
+  * `CS_EPU.m`
+  * `CS_T.m`
+  * `ES_CAR.m`
+  * `ES_InvestmentStrategy.m`
+  * `ES_RegAnalysis.m`
+  * `MV.m`
+  * `MV_rf.m`
+  * `BlackLitterman.m`
+  * `getuncef.m`
 
 * **Python (.py)**:
-    * `CAPM.py`
-    * `CAPM_2F.py`
-    * `CAPM_3F.py`
-    * `CAPM_RW.py`
-    * `CS_EPU.py`
-    * `CS_T.py`
-    * `ES_CAR.py`
-    * `ES_InvestmentStrategy.py`
-    * `ES_RegAnalysis.py`
-    * `MV.py`
-    * `MV_rf.py`
-    * `BlackLitterman.py`
-    * `getuncef.py`
+
+  * `CAPM.py`
+  * `CAPM_2F.py`
+  * `CAPM_3F.py`
+  * `CAPM_RW.py`
+  * `CS_EPU.py`
+  * `CS_T.py`
+  * `ES_CAR.py`
+  * `ES_InvestmentStrategy.py`
+  * `ES_RegAnalysis.py`
+  * `MV.py`
+  * `MV_rf.py`
+  * `BlackLitterman.py`
+  * `getuncef.py`
 
 * **Julia (.jl)**:
-    * `CAPM.jl`
-    * `CAPM_2F.jl`
-    * `CAPM_3F.jl`
-    * `CAPM_RW.jl`
-    * `CS_EPU.jl`
-    * `CS_T.jl`
-    * `ES_CAR.jl`
-    * `ES_InvestmentStrategy.jl`
-    * `MV.jl`
-    * `MV_rf.jl`
-    * `BlackLitterman.jl`
-    * `getuncef.jl`
+
+  * `CAPM.jl`
+  * `CAPM_2F.jl`
+  * `CAPM_3F.jl`
+  * `CAPM_RW.jl`
+  * `CS_EPU.jl`
+  * `CS_T.jl`
+  * `ES_CAR.jl`
+  * `ES_InvestmentStrategy.jl`
+  * `MV.jl`
+  * `MV_rf.jl`
+  * `BlackLitterman.jl`
+  * `getuncef.jl`
 
 * **R (.R)**:
-    * `CAPM.R`
-    * `CAPM_2F.R`
-    * `CAPM_3F.R`
-    * `CAPM_RW.R`
-    * `CS_EPU.R`
-    * `CS_T.R`
-    * `ES_CAR.R`
-    * `ES_InvestmentStrategy.R`
-    * `ES_RegAnalysis.R`
-    * `MV.R`
-    * `MV_rf.R`
-    * `BlackLitterman.R`
-    * `getuncef.R`
+
+  * `CAPM.R`
+  * `CAPM_2F.R`
+  * `CAPM_3F.R`
+  * `CAPM_RW.R`
+  * `CS_EPU.R`
+  * `CS_T.R`
+  * `ES_CAR.R`
+  * `ES_InvestmentStrategy.R`
+  * `ES_RegAnalysis.R`
+  * `MV.R`
+  * `MV_rf.R`
+  * `BlackLitterman.R`
+  * `getuncef.R`
 
 ## Data Structure
 
